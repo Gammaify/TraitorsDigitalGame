@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="324" height="84" viewBox="0 0 324 84">
+  <defs>
+    <style>
+        @font-face {
+            font-family: Sofia Pro Black;
+            src: url('/assets/fonts/SofiaPro-Black.otf');
+        }
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 30px;
+        font-family: Sofia Pro Black;
+      }
+
+      .cls-3 {
+        filter: url(#Rectangle_37);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.5" x2="0.5" y2="2.313" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0d0d0d"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="Rectangle_37" x="0" y="0" width="324" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="The_Night" data-name="The Night" transform="translate(9 6)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -9, -6)">
+      <rect id="Rectangle_37-2" data-name="Rectangle 37" class="cls-1" width="306" height="66" rx="31" transform="translate(9 6)"/>
+    </g>
+    <text id="EVENT" class="cls-2" transform="translate(108 43)"><tspan x="0" y="0">EVENT</tspan></text>
+  </g>
+</svg>

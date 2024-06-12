@@ -1,0 +1,73 @@
+.playerSelectorContainer{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    /* transform: translateX(100%); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url('/assets/images/Traitors_Black_Clouds_Cropped_Image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.rulesContainer{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rulesBtn{
+    background: linear-gradient(180deg, #101010 45%, #2B2B2B 100%);
+    color: white;
+    font-family: Sofia Pro Black;
+    padding: 10px 20px;
+    z-index: 1;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.CircleIcon{
+    width: 70vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.playerButton{
+    background-color: transparent;
+    border: 0;
+    width: 12vw;
+    height: 12vw;
+    
+}
+
+.playerButtonContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max-content;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.playerSelectTitle{
+    font-family: Sofia Pro Black;
+    position: absolute;
+    width: 97.5%;
+    text-align: center;
+    top: 10%;
+    background: linear-gradient(180deg, #101010 45%, #2B2B2B 100%);
+    z-index: 1;
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+

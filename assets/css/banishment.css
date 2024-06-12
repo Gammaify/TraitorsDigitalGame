@@ -1,0 +1,72 @@
+.banishmentContainer{
+    width:100%;
+    height: 100%;
+    display: flex;
+    /* transform: translateX(100%); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.BanishButtonHolder{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url('/assets/images/Traitor_Icon_Opacity_25.png');
+    background-size: cover;
+    background-position: 50% 68%;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.banishmentButtonContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0px;
+    background-image: url('/assets/images/Traitors_Black_Clouds_Cropped_Image.png');
+    background-size: 100% 250%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.canvas{
+    background-color: #171718;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-top: 5px solid #474a4d;
+    top: 0;
+}
+
+.banishmentReturnButton{
+    width:7vw;
+    margin-left: 3%;
+}
+.banishmentTiedButton{
+    width: 15vw;
+}
+/* .banishmentSideButtons{
+    width: 15vw;
+} */
+.banishmentMiddleButtons{
+    width: 30vw;
+}
+.voteAgainText{
+    color: white;
+    position: absolute;
+    z-index: 5;
+    font-size: 8vw;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Sofia Pro Black;
+}

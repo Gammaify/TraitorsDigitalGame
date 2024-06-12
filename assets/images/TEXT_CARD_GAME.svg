@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="34" viewBox="0 0 170 34">
+  <defs>
+    <style>
+      @font-face {
+        font-family: Sofia Pro Black;
+        src: url('/assets/fonts/SofiaPro-Black.otf');
+      }
+      .cls-1 {
+        fill: #f08115;
+        font-size: 29px;
+        font-family: Sofia Pro Black;
+      }
+    </style>
+  </defs>
+  <text id="CARD_GAME" data-name="CARD GAME" class="cls-1" transform="translate(0 26)"><tspan x="0" y="0">CARD GAME</tspan></text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="324" height="84" viewBox="0 0 324 84">
+  <defs>
+    <style>
+    @font-face {
+            font-family: Sofia Pro Black;
+            src: url(/assets/fonts/SofiaPro-Black.otf);
+        }
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 35px;
+        font-family: Sofia Pro Black;
+      }
+
+      .cls-4 {
+        filter: url(#Rectangle_14);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.5" x2="0.5" y2="2.313" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2b6465"/>
+      <stop offset="1" stop-color="#25c9cc"/>
+    </linearGradient>
+    <filter id="Rectangle_14" x="0" y="0" width="324" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Done-Green" transform="translate(9 6)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, -9, -6)">
+      <rect id="Rectangle_14-2" data-name="Rectangle 14" class="cls-1" width="306" height="66" rx="31" transform="translate(9 6)"/>
+    </g>
+    <text id="DONE" class="cls-2" transform="translate(105 44)"><tspan x="0" y="0">DONE</tspan></text>
+    <path id="Icon_ionic-md-checkmark" data-name="Icon ionic-md-checkmark" class="cls-3" d="M13.1,23.9,6.75,17.54,4.5,19.685l8.6,8.58L31.5,9.879,29.25,7.734Z" transform="translate(23.5 15)"/>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+
+.murderActionButtonsContainer{
+    display: flex;
+    justify-content: center;
+}
+#Screen5{
+    width:100%;
+    height: 100%;
+    display: flex;
+    /* transform: translateX(100%); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url('/assets/images/Traitors_Black_Clouds_Cropped_Image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.MurderButtons{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.MurderButtons4{
+    width: 100%;
+}
+.MurderButtons5{
+    width: 67%;
+    margin-bottom: 5%;
+}
+
+.MurderButtons6{
+    width: 58%;
+    margin-bottom: 5%;
+}
+.MurderButtons7{
+    width: 50%;
+    margin-bottom: 5%;
+   
+}
+
+.MurderButtons8{
+    width: 56%;
+    margin-bottom: 5%;
+}
+
+.murderShow{
+    width:30vw;
+    position: absolute;
+    z-index: 2;
+    bottom: 5%;
+    left: 5%;
+}
+
+.murderReset{
+    width: 8vw;
+    position: absolute;
+    bottom: 5%;
+    z-index: 2;
+}
+
+.murderDone{
+    width: 30vw;
+    position: absolute;
+    z-index: 2;
+    bottom: 5%;
+    right: 5%;
+    transform: translateY(30vh);
+}
+.doneBtn{
+    width: 30vw;
+}
+.MurderButtonContainerBottom{
+    position: absolute;
+    bottom: 5%;
+    z-index: 5;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.murderButton{
+ width: 10vw;
+}
+
+/* .done{
+    transform: translateX(100%)
+} */

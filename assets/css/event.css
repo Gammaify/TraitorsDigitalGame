@@ -1,0 +1,56 @@
+.eventContainer{
+    width:100%;
+    height: 100%;
+    display: flex;
+    /* transform: translateX(100%); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    background: black;
+}
+
+/* .murderBackground{
+    background: url(/assets/images/murderBackground.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.banishmentBackground{
+    background: url(/assets/images/banishmentBackground.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.quietNightBackground{
+    background: url(/assets/images/quietNightBackground.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+} */
+.eventBackground{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eventTitle{
+    font-family: Sofia Pro Black;
+    text-shadow: 3px 3px black;
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10vw;
+    top: 30%;
+    margin: 0;
+}
+
+.eventButton{
+    position: absolute;
+    bottom: 10%;
+    width: 10vw;
+}
+

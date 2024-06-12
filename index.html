@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css?v=12" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>The Traitors Card Game</title>
+    <script src=" https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/animations.css?v=2" />
+
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/title.css?v=10" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/playerSelector.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/menu.css?v=3" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/event.css?v=3" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/murderSelector.css?v=3" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/banishment.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/murderReveal.css?v=3" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui@1.13.2/dist/jquery-ui.min.js"></script>
+    <script src="/assets/js/languages.js?v=3"></script>
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+    <div class="loading" width="100%" height="100%">
+        <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="PortraitWarning">Please rotate your device to landscape!</div>
+    <div class="PageContainer">
+
+        <!-- Title Screen -->
+        <div id="Screen1" class="Content">
+            <div class="titleContainer">
+                <img class="logo" src="/assets/images/THE TRAITORS LOGO LOCKUP RGB.png">
+                <object class="logoText" data="/assets/images/TEXT_CARD_GAME.svg"></object>
+                <img class="startGameBtn logoText" src="/assets/images/circle-play-regular.svg" />
+            </div>
+            <div class="startGameContainer">
+
+
+
+            </div>
+        </div>
+
+        <!-- Player Selector -->
+        <div id="Screen2" class="Content">
+            <img class="CircleIcon" src="/assets/images/Traitor_Icon_Opacity_25.png" />
+            <div class="playerSelectorContainer">
+                <h1 class="playerSelectTitle" id="playerSelectTitle">Set Number of Players:</h1>
+
+                <div class="playerButtonContainer">
+                    <button class="playerButton" data-player="4">
+                        <object data="/assets/images/Buttons/4.svg"></object>
+                    </button>
+                    <button class="playerButton" data-player="5">
+                        <object data="/assets/images/Buttons/5.svg"></object>
+                    </button>
+                    <button class="playerButton" data-player="6">
+                        <object data="/assets/images/Buttons/6.svg"></object>
+                    </button>
+                    <button class="playerButton" data-player="7">
+                        <object data="/assets/images/Buttons/7.svg"></object>
+                    </button>
+                    <button class="playerButton" data-player="8">
+                        <object data="/assets/images/Buttons/8.svg"></object>
+                    </button>
+                </div>
+
+            </div>
+            <div class="rulesContainer">
+                <a class="rulesBtn" href="/assets/GFUKA23_THE_TRAITORS_WEB_ONLY_RULES_UPDATE.pdf"
+                    target="_blank">Rules</a>
+            </div>
+
+        </div>
+
+        <!-- Main Menu -->
+        <div id="Screen3" class="Content">
+            <div class="menuContainer">
+                <div class="mainButtonContainer">
+                    <div class="mainButton" id="event">
+                        <object id="eventBtn" data="/assets/images/en/Buttons/Event.svg"></object>
+                    </div>
+                    <div class="mainButton" id="banish">
+                        <object id="finalBanishmentBtn" data="/assets/images/en/Buttons/Final-Banishment.svg"></object>
+                    </div>
+                </div>
+
+                <div class="returnBtn" id="return">
+                    <object id="returnBtn2" data="/assets/images/Buttons/Button_Return.svg"></object>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Event (content loaded via controller.js) -->
+        <div id="Screen4" class="Content">
+            <div class="eventContainer">
+
+            </div>
+
+        </div>
+
+        <!-- Murder Selector -->
+        <div id="Screen5" class="Content">
+            <img class="CircleIcon" src="/assets/images/Traitor_Icon_Opacity_25.png" />
+            <div class="murderContainer">
+                <div class="MurderButtonsContainer" id="MurderButtonsContainer">
+                    <!-- Murder Buttons generated via controller.js -->
+                </div>
+
+                <div class="murderActionButtonsContainer">
+                    <div class="murderShow" id="MurderShow">
+                        <object id="murderRevealBtn" data="/assets/images/en/Buttons/MurderReveal.svg"></object>
+                    </div>
+                    <div class="murderReset" id="MurderReset">
+                        <object id="murderResetBtn" data="/assets/images/en/Buttons/Reset.svg"></object>
+                    </div>
+                    <div class="murderDone">
+                        <object id="murderDoneBtn" data="/assets/images/en/Buttons/Done.svg"></object>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="murderRevealContainer">
+
+            </div>
+        </div>
+
+        <!-- Murder Reveal (content loaded via controller.js) -->
+        <!-- <div id="Screen6" class="Content">
+                <img class="CircleIcon" src="/assets/images/Traitor_Icon_Opacity_25.png" />
+                <div class="murderRevealContainer">
+    
+                </div>
+          
+            </div> -->
+
+        <!-- Banishment -->
+        <div id="Screen7" class="Content">
+            <div class="banishmentContainer">
+                <canvas class="canvas" id="canvas"></canvas>
+                <div class="banishmentButtonContainer">
+                    <div class="BanishButtonHolder">
+                        <div id="BanishReturn" class="banishmentReturnButton">
+                            <object id="banishReturn2" data="/assets/images/Buttons/Button_Return.svg"></object>
+                        </div>
+                        <div id="BanishSave" class="banishmentMiddleButtons">
+                            <object id="castVoteBtn" data="/assets/images/en/Buttons/CastVote.svg"></object>
+                        </div>
+                        <div id="BanishReveal" class="banishmentMiddleButtons">
+                            <object id="revealVoteBtn" data="/assets/images/en/Buttons/RevealVote.svg"></object>
+                        </div>
+                        <div id="BanishTied" class="banishmentTiedButton">
+                            <object id="tiedVoteBtn" data="/assets/images/en/Buttons/TiedVote.svg"></object>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./assets/js/sound.js?v=16"></script>
+    <script src="./assets/js/controller.js?v=27"></script>
+    <script src="./assets/js/banishment.js?v=14"></script>
+    <script src="./assets/js/menu.js?v=11"></script>
+    <script src="./assets/js/murderSelector.js?v=12"></script>
+    <script src="./assets/js/playerSelector.js?v=11"></script>
+    <script src="./assets/js/canvas.js?v=11"></script>
+
+</body>
+
+</html>

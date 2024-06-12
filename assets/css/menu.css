@@ -1,0 +1,31 @@
+.menuContainer{
+    width:100%;
+    height: 100%;
+    display: flex;
+    /* transform: translateX(100%); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url('/assets/images/Event-Final-Banishment.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.mainButtonContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.returnBtn{
+    position: absolute;
+    bottom: 5%;
+    width: 10vw;
+}
+
+.mainButton{
+    width: 40vw;
+}

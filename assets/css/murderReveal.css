@@ -1,0 +1,61 @@
+.murderRevealContainer{
+    display: none;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url('/assets/images/Traitors_Black_Clouds_Cropped_Image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2; */
+}
+
+.smokeEffect{
+    opacity: 0;
+    width: 100%;
+    top: -20%;
+    position: absolute;
+}
+.murderRevealText{
+    margin: 0;
+    font-size: 7vw;
+    font-family: 'SOFIA PRO BLACK';
+    text-shadow: 3px 3px black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.murderRevealNumber{
+    margin: 0;
+    font-size: 15vw;
+    font-family: 'SOFIA PRO BLACK';
+    text-shadow: 3px 3px black;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.murderReturnBtn{
+    opacity: 0;
+    width: 10vw;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+}
